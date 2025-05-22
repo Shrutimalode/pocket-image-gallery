@@ -1,24 +1,16 @@
-# Welcome to your Lovable project
+# Temple Services Project
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/f809340e-4d2c-46ad-af3b-2eb31a112c67
+This is a Temple Services web application showcasing various temple decoration services.
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/f809340e-4d2c-46ad-af3b-2eb31a112c67) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
 **Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+You can work locally using your own IDE. The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
 Follow these steps:
 
@@ -62,12 +54,10 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/f809340e-4d2c-46ad-af3b-2eb31a112c67) and click on Share -> Publish.
+You can deploy this project using GitHub Pages:
 
-## Can I connect a custom domain to my Lovable project?
+```sh
+npm run deploy
+```
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Or by using any other static hosting service of your choice, such as Vercel, Netlify, or Cloudflare Pages.

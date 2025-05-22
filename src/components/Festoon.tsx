@@ -1,11 +1,14 @@
 import React from 'react';
-import festoonImage from '/festoon.png'; // Make sure this path is correct based on your project structure
+
+// Get base path from environment
+const basePath = import.meta.env.BASE_URL || '/pocket-image-gallery/';
+const festoonImagePath = `${basePath}festoon.png`;
 
 const Festoon: React.FC = () => {
   return (
     <div className="w-full overflow-hidden">
       <img 
-        src={festoonImage} 
+        src={festoonImagePath} 
         alt="Festoon Decoration" 
         className="mx-auto w-full max-w-md"
       />

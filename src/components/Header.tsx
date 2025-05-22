@@ -1,6 +1,9 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
 
+// Get base path from environment
+const basePath = import.meta.env.BASE_URL || '/pocket-image-gallery/';
+
 interface HeaderProps {
   className?: string;
 }
@@ -8,15 +11,25 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ className }) => {
   return (
     <header className={cn("pt-0 relative flex flex-col items-center", className)}>
-      {/* Top - Krishna Image with peacock feathers */}
       <div className="relative mb-4">
+        {/* Jay Shree Krishna image */}
+        <div className="absolute -left-36 -top-16 z-10 w-[170px]">
+          <img 
+            src={`${basePath}jayshreekrishna.png`} 
+            alt="Jay Shree Krishna" 
+            className="w-full h-auto"
+          />
+        </div>
+        
+        {/* Krishna Image */}
         <div className="h-40 w-40 relative rounded-full bg-white overflow-hidden shadow-lg">
           <img 
-            src="/krishna.jpeg" 
+            src={`${basePath}krishna.jpeg`} 
             alt="Lord Krishna" 
             className="w-full h-full object-cover"
           />
         </div>
+        
         {/* Peacock feather decoration */}
         <div className="absolute inset-0 scale-[1.6] -z-10">
           {Array.from({ length: 16 }).map((_, index) => (
@@ -35,11 +48,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
         </div>
       </div>
 
-      {/* Text content - Center aligned */}
       <div className="flex flex-col items-center text-center">
-        <h1 className="text-3xl font-bold text-red-600 mb-1">
-          जय श्री कृष्णा
-        </h1>
         <p className="text-lg text-gray-700">
           जन्माष्टमी स्पेशल पॅकेज
         </p>

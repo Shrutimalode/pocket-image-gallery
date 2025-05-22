@@ -5,6 +5,9 @@ export interface ServiceData {
   image: string;
 }
 
+// Import base path from config to ensure images load correctly
+const basePath = import.meta.env.BASE_URL || '/pocket-image-gallery/';
+
 export const services: ServiceData[] = [
   {
     id: "home-decoration",
@@ -14,7 +17,7 @@ export const services: ServiceData[] = [
       "जन्माष्टमी स्पेशल पॅकेज",
       "कृष्णा मूर्ती डेकोरेशन",
     ],
-    image: "/service-1.jpg"
+    image: `${basePath}service-1.jpg`
   },
   {
     id: "door-decor",
@@ -24,7 +27,7 @@ export const services: ServiceData[] = [
       "सुंदर फुलांचा वापर",
       "उच्च कोटीची कारागिरी",
     ],
-    image: "/service-2.jpg"
+    image: `${basePath}service-2.jpg`
   },
   {
     id: "wall-painting",
@@ -35,6 +38,6 @@ export const services: ServiceData[] = [
       "रिझनेबल व योग्य दरामध्ये",
       "तुमच्या इच्छेप्रमाणे",
     ],
-    image: "/service-3.jpg"
+    image: `${basePath}service-3.jpg`
   }
 ];
