@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/pocket-image-gallery/favicon.ico" />
     <title>Temple Services</title>
     <meta name="description" content="Hindu Temple Services and Decorations" />
     <meta name="author" content="Temple Services" />
@@ -18,8 +19,23 @@
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="/src/assets/krishna.png" />
-    <script type="module" crossorigin src="./assets/index-BzAIu3ij.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BmLL3-aj.css">
+    
+    <!-- Script for GitHub Pages SPA redirect -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages redirect script
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <script type="module" crossorigin src="/pocket-image-gallery/assets/index-BZEm1yr9.js"></script>
+    <link rel="stylesheet" crossorigin href="/pocket-image-gallery/assets/index-BmLL3-aj.css">
   </head>
 
   <body>
